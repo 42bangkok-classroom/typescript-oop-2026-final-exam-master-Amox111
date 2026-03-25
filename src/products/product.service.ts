@@ -1,6 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { Product } from './product.interface';
-import { ProductController } from './product.Controller';
 import * as fs from 'fs';
 import * as path from 'path';
 

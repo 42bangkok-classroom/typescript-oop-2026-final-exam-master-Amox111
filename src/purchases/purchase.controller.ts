@@ -17,10 +17,10 @@ export class PurchaseController {
     return this.productService.findOne(id);
   }
 
-  @Delete(':id')
+  /*@Delete(':id')
     remove(@Param('id') id: string) {
       return this.productService.remove(id);
-    }
+    }*/
 
 
 }

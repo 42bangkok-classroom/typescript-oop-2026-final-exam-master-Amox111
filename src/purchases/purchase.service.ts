@@ -20,7 +20,7 @@ export class PurchaseService {
         if (id === id) return purchases;
     }
 
-    remove(id: string) {
+    /*remove(id: string) {
         const purchases = [];
         const purchaseIndex = this..findIndex(p => p.id === id);
         if (purchaseIndex === -1) {
@@ -28,5 +28,5 @@ export class PurchaseService {
         }
         const removedBook = this.purchases.splice(purchaseIndex, 1);
         return removedBook;
-    }
+    }*/
 }
