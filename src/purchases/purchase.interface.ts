@@ -1,8 +1,8 @@
-export interface Purchase<T> {
+export interface Purchases {
     id: number,
     customerName: string,
     purchaseDate: string,
-    items: T[],
+    items: [],
     totalPrice: number
 }
 

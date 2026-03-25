@@ -17,4 +17,7 @@ export class PurchaseController {
     return this.productService.findOne(id);
   }
 
+  @Post()
+  
+
 }
