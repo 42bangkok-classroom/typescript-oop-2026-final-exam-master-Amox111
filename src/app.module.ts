@@ -7,7 +7,7 @@ import { PurchaseModule } from './purchases/purchase.module';
 import { ProductModule } from './products/product.module';
 
 @Module({
-  imports: [PurchaseModule, ProductModule],
+  imports: [PurchaseModule, ProductModule, AppController, AppService],
   controllers: [AppController],
   providers: [
     AppService,
