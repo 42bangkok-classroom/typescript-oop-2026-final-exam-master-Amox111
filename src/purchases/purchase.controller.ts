@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Query } from '@nestjs/common';
+import { Controller, Get, Param, Delete } from '@nestjs/common';
 import { Purchases } from './purchase.interface';
 import { PurchaseService } from './purchase.service';
 
@@ -13,11 +13,14 @@ export class PurchaseController {
   }
 
   @Get(':id')
-  findOne( @Param('id') id: number) {
+  findOne( @Param('id') id: string) {
     return this.productService.findOne(id);
   }
 
-  @Post()
-  
+  @Delete(':id')
+    remove(@Param('id') id: string) {
+      return this.productService.remove(id);
+    }
+
 
 }

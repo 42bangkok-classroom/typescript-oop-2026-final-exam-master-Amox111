@@ -1,5 +1,5 @@
 export interface Purchases {
-    id: number,
+    id: string,
     customerName: string,
     purchaseDate: string,
     items: [],
@@ -7,7 +7,7 @@ export interface Purchases {
 }
 
 export interface PurchaseItem {
-    productId: number,
+    productId: string,
     quantity: number,
     price: number
 }

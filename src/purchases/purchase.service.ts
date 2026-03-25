@@ -12,7 +12,7 @@ export class PurchaseService {
         return JSON.parse(fileContent) as Purchases[];
     }
 
-    findOne(id: number) {
+    findOne(id: string) {
         const purchases = this.findAll().find(p => p.id === id);
 
         if (!purchases) throw new NotFoundException('Purchases not found');
@@ -20,4 +20,13 @@ export class PurchaseService {
         if (id === id) return purchases;
     }
 
+    remove(id: string) {
+        const purchases = [];
+        const purchaseIndex = this..findIndex(p => p.id === id);
+        if (purchaseIndex === -1) {
+          throw new NotFoundException(`Book with ID ${id} not found`);
+        }
+        const removedBook = this.purchases.splice(purchaseIndex, 1);
+        return removedBook;
+    }
 }
